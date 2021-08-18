@@ -388,12 +388,12 @@ i.fa-check-double {
 
 .teammate-photo {
     width: 100%;
+    position: relative;
 }
 
 .teammate-name {
     font-weight: bold;
-    text-align: center;
-    margin: 10px 20px;
+    margin: 10px 0;
 }
 
 .teammate-photo img {
@@ -405,10 +405,9 @@ i.fa-check-double {
 }
 
 .teammate-profession {
-    text-align: center;
     font-size: 14px;
     color: #999;
-    margin: 5px 20px;
+    margin: 10px 0;
 }
 
 .pricing-card {
@@ -468,4 +467,125 @@ i.fa-check-double {
 
 .pricing-container {
     margin: 25px auto;
+}
+
+.teammate-card:hover .teammate-hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+.teammate-hover {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #ffffffb5;
+    padding: 5px 0 10px 0;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.hover-flexed {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hover-flexed a {
+    color: black;
+}
+
+.portfolio-pages {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.portfolio-button {
+    margin: 20px 10px;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.portfolio-card {
+    width: 25%;
+    position: relative;
+    margin: 10px;
+}
+
+.portfolio-card:hover .portfolio-card-info {
+    opacity: 1;
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.portfolio-card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    display: flex;
+    width: 100%;
+    color: white;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.portfolio-card-info-links {
+
+    display: flex;
+
+    font-size: 24px;
+}
+
+.portfolio-image img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio-card-info p {
+    margin: 10px 0;
+}
+
+.portfolio-card-info h4 {
+    font-size: 20px;
+}
+
+.portfolio-card-info-links a {
+    color: white;
+}
+
+.selected-button-portfolio {
+    background: #47aeff;
+    color: white;
+}
+
+.portfolio-button:hover {
+    background: #47aeff;
+    color: white;
+    transition: 0.3s;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.5);
+    transition: 0.3s;
+}
+.portfolio-image {
+    overflow: hidden;
 }
