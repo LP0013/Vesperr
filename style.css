@@ -13,7 +13,7 @@ header .container {
 }
 
 .container {
-    width: 90%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -393,7 +393,7 @@ i.fa-check-double {
 
 .teammate-name {
     font-weight: bold;
-    margin: 10px 0;
+    margin: 5px 0 0 0;
 }
 
 .teammate-photo img {
@@ -404,10 +404,15 @@ i.fa-check-double {
     margin: 40px auto;
 }
 
+.teammate-info {
+    text-align: center;
+}
+
 .teammate-profession {
     font-size: 14px;
     color: #999;
-    margin: 10px 0;
+    display: block;
+    margin: 5px 0px 10px 0;
 }
 
 .pricing-card {
@@ -586,6 +591,7 @@ i.fa-check-double {
     transform: scale(1.5);
     transition: 0.3s;
 }
+
 .portfolio-image {
     overflow: hidden;
 }
