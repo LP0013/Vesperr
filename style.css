@@ -13,12 +13,12 @@ header .container {
 }
 
 .container {
-    width: 75%;
+    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 20px auto;
     min-width: 780px;
 }
 
@@ -49,11 +49,6 @@ header .container {
 #vesperr_logo {
     text-decoration: none;
     color: black;
-}
-
-.footer_container {
-    display: flex;
-    justify-content: space-around;
 }
 
 .grow-button {
@@ -109,6 +104,29 @@ header .container {
     height: 1px;
     border: 2px solid #3498db;
     box-sizing: border-box;
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.section-title-text {
+    font-weight: bold;
+    margin: 0 15px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.section-title-text::before, .section-title-text::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    background: #3498db;
+    vertical-align: middle;
+    margin: 0 20px;
 }
 
 .about-us {
@@ -594,4 +612,190 @@ i.fa-check-double {
 
 .portfolio-image {
     overflow: hidden;
+}
+
+.faq-container {
+    flex-direction: column;
+    color: #444444;
+}
+
+.faq-line {
+    display: flex;
+    border-bottom: 1px solid #c1c1c1;
+    padding: 20px 0 20px 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+i.ri-question-line {
+    color: #8bc4ea;
+}
+
+.question {
+    display: flex;
+    font-weight: bold;
+    width: 40%;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    align-items: flex-start;
+}
+
+.contact-address {
+    display: flex;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    color: #3498db;
+}
+
+.contact-form form input {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+}
+
+form button {
+    border: 2px solid #3498db;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #3498db;
+    color: white;
+    width: 60%;
+}
+
+form input {
+    width: 100%;
+}
+
+.contact-addresses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 20px;
+    width: 30%;
+}
+
+.contact-form {
+    width: 40%;
+}
+
+.contact-container {
+}
+
+.contact-addresses i {
+    color: #3498db;
+    margin: 0px 10px 0 0;
+    font-size: 30px;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 14px;
+    color: #888888;
+}
+
+.contact-info h4 {
+    font-size: 28px;
+}
+
+.contact-links i {
+    font-size: 18px;
+}
+
+.contact-links a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3498db;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.contact-links {
+    display: flex;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-right p {
+    margin: 0 10px;
+}
+
+.footer_container {
+    padding: 20px 0;
+}
+
+.footer-right p {
+    font-size: 14px;
+}
+
+.footer-left p {
+    font-size: 14px;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px 0px rgb(0 0 0 / 10%);
+    align-items: center;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-left a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    color: #47aeff;
+    transition: 0.3s;
 }
