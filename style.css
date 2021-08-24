@@ -9,17 +9,18 @@ header {
 }
 
 header .container {
-    padding: 20px 0;
+    padding: 22px 0;
 }
 
 .container {
     width: 80%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-start;
     box-sizing: border-box;
-    margin: 20px auto;
+    margin: 0px auto;
     min-width: 780px;
+    line-height: 1.5;
 }
 
 .vesperr_logo {
@@ -38,12 +39,13 @@ header .container {
 }
 
 .header_menu_btn {
-    width: 150px;
-    height: 35px;
     border: none;
     border-radius: 30px;
     background-color: #3498db;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 20px;
+    transition: 0.3s;
 }
 
 #vesperr_logo {
@@ -52,25 +54,31 @@ header .container {
 }
 
 .grow-button {
-    width: 150px;
-    height: 35px;
-    border: 3px solid #3498db;
+    border: 2px solid #3498db;
     border-radius: 30px;
     background-color: transparent;
     margin: 30px 0;
     color: #3498db;
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.3s;
+    font-weight: 600;
 }
 
 .grow-bold {
-    font-weight: bold;
-    font-size: 35px;
+    font-size: 48px;
     margin: 20px 0;
+    line-height: 56px;
+    font-weight: 700;
 }
 
 .grow-text {
-    color: grey;
+    color: #484848;
     font-size: 24px;
     margin: 20px 0;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .hero-img {
@@ -84,6 +92,11 @@ header .container {
 
 .client-logo {
     width: 80px;
+    filter: grayscale(1);
+}
+
+.client-logo:hover {
+    filter: grayscale(0);
 }
 
 .about-us-container {
@@ -108,7 +121,7 @@ header .container {
 
 .section-title {
     text-align: center;
-    padding: 30px 0;
+    padding-bottom: 30px;
     box-sizing: border-box;
 }
 
@@ -117,6 +130,7 @@ header .container {
     margin: 0 15px;
     font-size: 32px;
     text-transform: uppercase;
+    color: #222222;
 }
 
 .section-title-text::before, .section-title-text::after {
@@ -141,6 +155,7 @@ header .container {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    color: #444444;
 }
 
 .about-us-inner-container-right {
@@ -148,6 +163,7 @@ header .container {
     width: 100%;
     padding: 20px;
     box-sizing: border-box;
+    color: #444444;
 }
 
 .about-us-list {
@@ -177,6 +193,8 @@ i.fa-check-double {
 
 .counter-left {
     width: 40%;
+    box-sizing: border-box;
+    padding-right: 10px;
 }
 
 .icon-numbers {
@@ -187,12 +205,13 @@ i.fa-check-double {
 }
 
 .number {
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
+    color: #222222;
 }
 
 .bi-award, .bi-clock, .bi-emoji-smile, .bi-journal-richtext {
-    font-size: 25px;
+    font-size: 36px;
     color: #3498db;
     margin: 10px;
 }
@@ -204,6 +223,8 @@ i.fa-check-double {
 
 .services-text {
     text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
 }
 
 .service-box {
@@ -233,30 +254,31 @@ i.fa-check-double {
 }
 
 .bx-file, .bx-tachometer, .bx-world, .bxl-dribbble {
-    font-size: 50px;
+    font-size: 36px;
     color: white;
 }
 
 .service-icon {
-    padding: 15px;
     box-sizing: border-box;
     border-radius: 100%;
     background: #3498db;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .service-name {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     margin: 15px 0;
 }
 
 .service-text {
     font-size: 15px;
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
 }
 
 .image-box {
@@ -310,7 +332,8 @@ i.fa-check-double {
     font-weight: bold;
     text-align: center;
     margin: 0 0 20px 0;
-    font-size: 28px;
+    font-size: 20px;
+    color: #222222;
 }
 
 .image-text {
@@ -333,6 +356,7 @@ i.fa-check-double {
     margin: 10px 15px;
     align-items: center;
     justify-content: flex-start;
+    transition: 0.3s;
 }
 
 .feauture-icon {
@@ -365,8 +389,9 @@ i.fa-check-double {
 }
 
 .testimonialsmate-profession {
-    font-size: 12px;
+    font-size: 14px;
     color: #999;
+    font-weight: 500;
 }
 
 .testimonialsmate-name {
@@ -382,6 +407,8 @@ i.fa-check-double {
 
 .testimonialsmate-text {
     font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
 }
 
 .testimonialsmate-photo {
@@ -411,11 +438,12 @@ i.fa-check-double {
 
 .teammate-name {
     font-weight: bold;
-    margin: 5px 0 0 0;
+    /* margin: 5px 0 0 0; */
 }
 
 .teammate-photo img {
     width: 100%;
+    display: block;
 }
 
 .team-container {
@@ -424,13 +452,14 @@ i.fa-check-double {
 
 .teammate-info {
     text-align: center;
+    padding: 25px 15px;
 }
 
 .teammate-profession {
     font-size: 14px;
     color: #999;
     display: block;
-    margin: 5px 0px 10px 0;
+    margin: 5px 0px 0 0;
 }
 
 .pricing-card {
@@ -446,19 +475,23 @@ i.fa-check-double {
     border: 2px solid #3498db;
 }
 
-.del {
-    text-decoration: line-through;
-    color: #cccccc;
-}
-
 .pricing-name {
     font-weight: bold;
+    margin: 15px 0 8px 0;
+    font-size: 18px;
 }
 
 .pricing-price {
-    font-size: 34px;
+    font-size: 42px;
     color: #3498db;
     margin: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pricing-feautures p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #222222;
 }
 
 .pricing-price span {
@@ -466,12 +499,14 @@ i.fa-check-double {
     font-size: 14px;
 }
 
-.pricing-feautures p {
-    margin: 10px 0;
+.pricing-feautures .del {
+    text-decoration: line-through;
+    color: #cccccc;
 }
 
 .pricing-feautures {
     margin: 30px 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .buy-button {
@@ -481,6 +516,9 @@ i.fa-check-double {
     font-size: 16px;
     background: none;
     color: #3498db;
+    margin: 16px 0;
+    transition: 0.3s;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .selected-button {
@@ -580,6 +618,7 @@ i.fa-check-double {
 .portfolio-image img {
     width: 100%;
     display: block;
+    transition: 0.3s;
 }
 
 .portfolio-card-info p {
@@ -607,7 +646,6 @@ i.fa-check-double {
 
 .portfolio-card:hover .portfolio-image img {
     transform: scale(1.5);
-    transition: 0.3s;
 }
 
 .portfolio-image {
@@ -621,7 +659,7 @@ i.fa-check-double {
 
 .faq-line {
     display: flex;
-    border-bottom: 1px solid #c1c1c1;
+    border-bottom: 1px solid #eeeeee;
     padding: 20px 0 20px 0;
     box-sizing: border-box;
     justify-content: space-between;
@@ -629,14 +667,17 @@ i.fa-check-double {
 
 i.ri-question-line {
     color: #8bc4ea;
+    font-size: 24px;
+    line-height: initial;
+    margin-right: 10px;
 }
 
 .question {
     display: flex;
-    font-weight: bold;
     width: 40%;
     flex-shrink: 0;
     margin-right: 20px;
+    align-items: flex-start;
 }
 
 .contact-info {
@@ -650,6 +691,9 @@ i.ri-question-line {
 .contact-address {
     display: flex;
     margin: 10px 0;
+    color: #444444;
+    font-size: 14px;
+    align-items: center;
 }
 
 .contact-info i {
@@ -675,6 +719,8 @@ textarea {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid #cccccc;
+    min-width: 100%;
+    max-width: 100%;
 }
 
 form button {
@@ -684,7 +730,9 @@ form button {
     font-size: 16px;
     background: #3498db;
     color: white;
-    width: 60%;
+    width: 40%;
+    transition: 0.3s;
+    font-family: 'Open Sans', sans-serif;
 }
 
 form input {
@@ -737,6 +785,7 @@ form input {
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    transition: 0.3s;
 }
 
 .contact-links {
@@ -774,6 +823,7 @@ form input {
 
 .footer-left p {
     font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer_container {
@@ -788,6 +838,7 @@ form input {
 .footer-right a {
     text-decoration: none;
     color: black;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .footer-left a {
@@ -798,4 +849,121 @@ form input {
 .footer-right a:hover {
     color: #47aeff;
     transition: 0.3s;
+}
+
+.top {
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.partners .container {
+    align-items: center;
+}
+
+section.about {
+    padding: 60px 0;
+}
+
+.counter-count * {
+    font-family: "Open Sans", sans-serif;
+}
+
+.number_text {
+    color: #484848;
+    font-size: 14px;
+}
+
+section.services {
+    padding: 20px 0 60px 0;
+}
+
+.image-text {
+    color: #5E5E5E;
+    font-family: "Open Sans", sans-serif;
+}
+
+.text-box a {
+    text-decoration: none;
+    color: #777777;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+section.feautures {
+    padding: 60px 0;
+}
+
+section.testimonials {
+    background: #f7fbfe;
+    padding: 60px 0;
+}
+
+section.portfolio {
+    padding: 60px 0;
+}
+
+section.team {
+    padding: 60px 0;
+}
+
+section.pricing {
+    padding: 60px 0;
+}
+
+section.faq {
+    padding: 60px 0;
+}
+
+section.contact-us {
+    padding: 60px 0;
+}
+
+.answer p {
+    font-size: 15px;
+    color: #444444;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.question p {
+    color: #444444;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.header_menu_btn:hover {
+    background: #4aa3df;
+}
+
+.grow-button:hover {
+    background: #3498db;
+    color: white;
+}
+
+.buy-button:hover {
+    background: #3498db;
+    color: white;
+}
+
+.feauture:hover {
+    background: #eef7fc;
+}
+
+form button:hover {
+    background: #2383c4;
+    border: 2px solid #2383c4;
+}
+
+.contact-links a:hover {
+    background: #3498db;
+    color: white;
+}
+
+.contact-links a:hover i {
+    color: white
+}
+
+.selected-button:hover {
+    background: #2383c4;
+    border: 2px solid #2383c4;
 }
