@@ -1,11 +1,20 @@
 * {
-    font-family: Raleway, SansSerif;
+    font-family: Raleway, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 header {
     width: 100%;
+    position: fixed;
+    background: white;
+    z-index: 99;
+    top: 0;
 }
 
 header .container {
@@ -32,10 +41,58 @@ header .container {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    list-style: none;
+}
+
+.header_menu * {
+    font-family: "Open Sans", sans-serif;
 }
 
 .header_menu_item {
     margin: 0 10px;
+    padding: 10px 0;
+}
+
+.header_menu_list {
+    list-style: none;
+    position: absolute;
+    padding: 10px 0;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 25%);
+    width: 180px;
+    background: white;
+    border-radius: 5px;
+    top: 60px;
+    opacity: 0;
+    transition: 0.3s;
+    visibility: hidden;
+}
+
+.deep_drop_2 {
+    top: 0;
+    left: 120%;
+    transition: 0.3s;
+}
+
+.deep_drop:hover > .header_menu_list {
+    opacity: 1;
+    visibility: visible;
+    top: 40px;
+}
+
+.deep_drop:hover > .header_menu_list.deep_drop_2 {
+    opacity: 1;
+    visibility: visible;
+    left: 100%;
+    top: 0;
+}
+
+.header_menu_list li {
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+.deep_drop {
+    position: relative;
 }
 
 .header_menu_btn {
@@ -82,7 +139,8 @@ header .container {
 }
 
 .hero-img {
-    width: 500px;
+    width: 100%;
+    display: block;
 }
 
 .logo-container {
@@ -852,8 +910,20 @@ form input {
 }
 
 .top {
-    padding: 100px 0;
+    padding: 60px 0;
     box-sizing: border-box;
+    margin-top: 100px;
+}
+.container-left {
+    margin-right: 30px;
+}
+
+.container-right {
+    width: 60%;
+}
+
+.top .container {
+    align-items: center;
 }
 
 .partners .container {

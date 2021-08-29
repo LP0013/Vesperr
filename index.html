@@ -28,29 +28,37 @@
         <div class="vesperr_logo">
             <a href="" id="vesperr_logo">Vesperr</a>
         </div>
-        <div class="header_menu">
-            <p class="header_menu_item">Home</p>
-            <p class="header_menu_item">About</p>
-            <p class="header_menu_item">Services</p>
-            <p class="header_menu_item">Portfolio</p>
-            <p class="header_menu_item">Team</p>
-            <p class="header_menu_item">Pricing</p>
-            <ul class="header_menu_list header_menu_item"> Drop Down<!--
-            <li>Drop Down 1</li>
-            <li>Drop Down 2</li>
-            <ul> Deep Drop Down
-                <li>Drop Down 1</li>
-                <li>Drop Down 2</li>
-                <li>Drop Down 3</li>
-                <li>Drop Down 4</li>
-                <li>Drop Down 5</li>
-            </ul>
-            <li>Drop Down 3</li>
-            <li>Drop Down 4</li>-->
-            </ul>
-            <p class="header_menu_item">Dontact</p>
-            <button class="header_menu_btn header_menu_item">Get Started</button>
-        </div>
+        <ul class="header_menu">
+            <li class="header_menu_item"><a href="">Home</a></li>
+            <li class="header_menu_item"><a href="">About</a></li>
+            <li class="header_menu_item"><a href="">Services</a></li>
+            <li class="header_menu_item"><a href="">Portfolio</a></li>
+            <li class="header_menu_item"><a href="">Team</a></li>
+            <li class="header_menu_item"><a href="">Pricing</a></li>
+            <li class="header_menu_item deep_drop">
+                Drop Down
+                <ul class="header_menu_list">
+                    <li>Drop Down 1</li>
+                    <li>Drop Down 2</li>
+                    <li class="deep_drop">
+                        Deep Drop Down
+                        <ul class="header_menu_list deep_drop_2">
+                            <li>Drop Down 1</li>
+                            <li>Drop Down 2</li>
+                            <li>Drop Down 3</li>
+                            <li>Drop Down 4</li>
+                            <li>Drop Down 5</li>
+                        </ul>
+                    </li>
+                    <li>Drop Down 3</li>
+                    <li>Drop Down 4</li>
+                </ul>
+            </li>
+            <li class="header_menu_item"><a href="">Contact</a></li>
+            <li>
+                <button class="header_menu_btn header_menu_item">Get Started</button>
+            </li>
+        </ul>
     </div>
 
 </header>
@@ -668,10 +676,10 @@
             </div>
             <div class="contact-form">
                 <form>
-                    <input name = "name" type="text" placeholder="Your name">
-                    <input name = "email" type="email" placeholder="Your email">
-                    <input name = "subject" type="text" placeholder="Subject">
-                    <textarea name = "message" placeholder="Message"></textarea>
+                    <input name="name" type="text" placeholder="Your name">
+                    <input name="email" type="email" placeholder="Your email">
+                    <input name="subject" type="text" placeholder="Subject">
+                    <textarea name="message" placeholder="Message"></textarea>
                     <button>Send Message</button>
                 </form>
             </div>
