@@ -28,7 +28,7 @@ header .container {
     align-items: flex-start;
     box-sizing: border-box;
     margin: 0px auto;
-    min-width: 780px;
+    min-width: 700px;
     line-height: 1.5;
 }
 
@@ -280,7 +280,7 @@ i.fa-check-double {
     width: 40%;
     box-sizing: border-box;
     padding-right: 10px;
-    min-width: 360px;
+    min-width: 300px;
     flex-grow: 1;
 }
 

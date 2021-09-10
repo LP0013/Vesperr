@@ -2,8 +2,23 @@
     width: 90%;
 }
 
+.grow-bold {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.grow-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
 .counter-container {
     flex-wrap: wrap;
+}
+
+.counter-left {
+    padding: 0;
 }
 
 .counter-right {
@@ -31,10 +46,12 @@
 
 .x_button .menu_x_button1 {
     transform: translate(0px, 10px) rotate(45deg);
+    background: #fff;
 }
 
 .x_button .menu_x_button3 {
     transform: translate(0px, -6px) rotate(-45deg);
+    background: #fff;
 }
 
 .menu_button span {
@@ -64,7 +81,7 @@ header .container {
 }
 
 .container {
-    width: 90%;
+    width: 70%;
 }
 
 .counter-container {
@@ -104,6 +121,7 @@ header .container {
 
 .container-right {
     order: -1;
+    width: 80%;
 }
 
 .header_menu_container {
