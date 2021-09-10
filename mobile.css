@@ -1,0 +1,133 @@
+.container {
+    min-width: 400px;
+}
+
+.counter-right {
+    flex-direction: column;
+    width: 100%;
+}
+
+.icon-numbers {
+    width: 100%;
+}
+
+.container.services-content {
+    flex-direction: column;
+}
+
+.service-box {
+    width: 100%;
+}
+
+.images-container {
+    flex-direction: column;
+}
+
+.image-box {
+    width: 100%;
+}
+
+.feautures-box {
+    flex-direction: column;
+}
+
+.feauture {
+    width: 100%;
+}
+
+.portfolio-container.container {
+    flex-direction: column;
+}
+
+.portfolio-card {
+    width: 100%;
+}
+
+.team-container.container {
+    flex-direction: column;
+}
+
+.teammate-card {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.pricing-container.container {
+    flex-direction: column;
+}
+
+.pricing-card {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.faq-line {
+    flex-direction: column;
+}
+
+.question {
+    width: 100%;
+}
+
+.answer {
+    width: 100%;
+}
+
+.contact-container.container {
+    flex-direction: column;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-addresses {
+    width: 100%;
+    margin: 0;
+}
+
+.testimonials-container.container {
+    flex-direction: column;
+}
+
+.testimonials-card {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.testimonialsmate-photo {
+    position: static;
+    margin-bottom: 10px;
+}
+
+.section-title-text {
+    font-size: 24px;
+}
+
+.container.about-us-inner-container {
+    flex-direction: column;
+}
+
+.partners .container {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+img.client-logo {
+    width: 50%;
+    padding: 10px 50px;
+    box-sizing: border-box;
+}
+
+.feautures-box {
+    width: 100%;
+}
+
+.feauture {
+    margin: 10px 0;
+    box-sizing: border-box;
+}
